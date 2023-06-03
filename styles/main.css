@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+#game{
+    width: 500px;
+    height: 500px;
+    background-color: antiquewhite;
+    position: relative;
+}
+#board{
+    width: 75%;
+    height: 75%;
+    top: 12.5%;
+    left: 12.5%;
+    position: absolute;
+    background-color: aquamarine;
+}
+
+.feline{
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition: top 1s, left 1s;
+}
+
+.player-0{
+    background-color: orange;
+}
+.player-1{
+    background-color: grey;
+}

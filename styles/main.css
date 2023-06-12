@@ -1,14 +1,18 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
 }
-#game{
+#playSpace{
+    display: flex;
+}
+#game {
     width: 500px;
     height: 500px;
     background-color: antiquewhite;
     position: relative;
 }
-#board{
+
+#board {
     width: 75%;
     height: 75%;
     top: 12.5%;
@@ -17,7 +21,22 @@
     background-color: aquamarine;
 }
 
-.feline{
+#playerSpace1 {
+    position: relative;
+    width: 200px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+#playerSpace2 {
+    position: relative;
+    width: 200px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+
+.feline {
     width: 12.5%;
     height: 12.5%;
     position: absolute;
@@ -26,9 +45,10 @@
     transition: top 1s, left 1s;
 }
 
-.player-0{
+.player-0 {
     background-color: orange;
 }
-.player-1{
+
+.player-1 {
     background-color: grey;
 }

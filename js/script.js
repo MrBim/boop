@@ -26,9 +26,7 @@ const makeNewFeline = (top, left, catType = 0) => {
 const boop = (x, y) => {
     const kittens = document.getElementsByClassName('feline');
     const kittyPositions = [];
-    // for (let i = 0; i < kittens.length; i++){
-    //     console.log('kittens before', i, kittens[i])
-    // }
+    
     for (let i = 0; i < kittens.length; i++) {
         const kitten = kittens[i];
         const top = parseFloat(kitten.style.top.slice(0, -1));
@@ -75,7 +73,7 @@ const boop = (x, y) => {
 
     setTimeout(() => {
         if (!kittens)return;
-        checkForTripples(kittens);
+        checkForTriples(kittens);
     }, 1500);
 }
 

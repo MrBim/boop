@@ -2,9 +2,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 #playSpace{
     display: flex;
 }
+
 #game {
     width: 500px;
     height: 500px;
@@ -32,11 +34,12 @@
 }
 
 .playerSpace .feline {
-    width: 40px;
-    height: 40px;
+    width: 62.5px;
+    height: 62.5px;
     margin: 5px;
     position: static;
 }
+
 .feline {
     width: 12.5%;
     height: 12.5%;
@@ -44,15 +47,17 @@
     top: 0%;
     left: 0%;
     transition: top 1s, left 1s;
-    border: 5px solid white;
+    border: 5px solid rgb(126, 126, 126);
 }
 
 .player-0 {
     background-color: orange;
+    border: 5px solid grey
 }
 
 .player-1 {
     background-color: grey;
+    border: 5px solid orange;
 }
 
 .kitten {

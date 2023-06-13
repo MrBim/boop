@@ -82,6 +82,7 @@ const kittyShouldBoop = (top, left, x, y) => {
     && ((left / 12.5 === (x + 1) || left / 12.5 === (x - 1)) || ((left / 12.5) === (x))) 
     && !(((top / 12.5) === (y)) && ((left / 12.5) === (x)));
 }
+
 // big bugs here. 
 const kittyHasNeighbours = (kitty1,kitty2) => {
     return (
@@ -135,6 +136,7 @@ const checkForTripples = (kittens) => {
         })
     })
 }
+
 gameBoard.addEventListener('click', (e) => {
     const newX = Math.floor(e.x / kittenWidth);
     const newY = Math.floor(e.y / kittenWidth);

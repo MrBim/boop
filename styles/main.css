@@ -44,6 +44,7 @@
     top: 0%;
     left: 0%;
     transition: top 1s, left 1s;
+    border: 5px solid white;
 }
 
 .player-0 {
@@ -52,4 +53,18 @@
 
 .player-1 {
     background-color: grey;
+}
+
+.kitten {
+    background-image: url('../assets/kitten.png');
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cat {
+    background-image: url('../assets/cat.png');
+    background-size: 69%;
+    background-repeat: no-repeat;
+    background-position: center;
 }

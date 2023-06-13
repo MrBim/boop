@@ -21,21 +21,22 @@
     background-color: aquamarine;
 }
 
-#playerSpace1 {
+.playerSpace {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
     width: 200px;
     height: 500px;
     border: 1px solid black;
 }
 
-#playerSpace2 {
-    position: relative;
-    width: 200px;
-    height: 500px;
-    border: 1px solid black;
+.playerSpace .feline {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    position: static;
 }
-
-
 .feline {
     width: 12.5%;
     height: 12.5%;

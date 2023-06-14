@@ -15,21 +15,22 @@ class Game {
     this.gameBoard = document.getElementById('game')
 
     // break this out in to its own method.
-    this.gameBoard.addEventListener('click', (e) => {
-      const newX = Math.floor((e.x - 200) / kittenWidth)
-      const newY = Math.floor((e.y) / kittenWidth)
-      const designatedFeline = this.felines.filter((it) => (it.player === this.playersTurn) && !it.isInPlay)[0];
-
-      this.placeFeline(designatedFeline, newX, newY)
-      this.boop(newX, newY)
-      this.nextTurn()
-    }, false)
+    this.gameBoard.addEventListener('click', (e) => this.handleBoardClick(e, this.felines), false)
 
       ;[...Array(16).keys()].forEach((it) => {
         this.felines.push(new Feline(it, this.playerOneSpace, this.playerTwoSpace))
       })
   }
+  handleBoardClick(e, felines) {
+    const newX = Math.floor((e.x - 200) / kittenWidth)
+    const newY = Math.floor((e.y) / kittenWidth)
+    console.log('this.felines', felines, this.playersTurn)
+    const designatedFeline = felines.filter((it) => (it.player === this.playersTurn) && !it.isInPlay)[0];
 
+    this.placeFeline(designatedFeline, newX, newY)
+    this.boop(newX, newY)
+    this.nextTurn()
+  }
   nextTurn() {
     this.playersTurn = Math.abs(this.playersTurn - 1)
   }
